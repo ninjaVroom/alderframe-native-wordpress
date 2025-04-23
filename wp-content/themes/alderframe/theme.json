@@ -1,0 +1,63 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": false,
+		"useRootPaddingAwareAlignments": true,
+		"layout": { "contentSize": "720px", "wideSize": "1280px" },
+		"color": {
+			"custom": false, "customGradient": false, "customDuotone": false,
+			"defaultPalette": false, "defaultGradients": false, "defaultDuotone": false,
+			"palette": [
+				{ "slug": "canvas", "name": "Canvas", "color": "#F7F6F1" },
+				{ "slug": "stone",  "name": "Stone",  "color": "#E9E4DA" },
+				{ "slug": "moss",   "name": "Moss",   "color": "#2F4A32" },
+				{ "slug": "ink",    "name": "Ink",    "color": "#1D1F1C" },
+				{ "slug": "action", "name": "Action", "color": "#8A3B12" },
+				{ "slug": "muted",  "name": "Muted",  "color": "#5C6257" },
+				{ "slug": "rule",   "name": "Rule",   "color": "#D2D5C9" }
+			]
+		},
+		"typography": {
+			"customFontSize": false, "fluid": true, "dropCap": false, "fontStyle": false, "letterSpacing": false, "textTransform": false,
+			"fontFamilies": [
+				{ "slug": "display", "name": "Instrument Serif", "fontFamily": "\"Instrument Serif\", \"Iowan Old Style\", Georgia, serif",
+				  "fontFace": [ { "fontFamily": "Instrument Serif", "fontWeight": "400", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/InstrumentSerif-Regular.ttf" ] } ] },
+				{ "slug": "body", "name": "Manrope", "fontFamily": "Manrope, \"Segoe UI\", system-ui, sans-serif",
+				  "fontFace": [ { "fontFamily": "Manrope", "fontWeight": "200 800", "fontStyle": "normal", "fontDisplay": "swap", "src": [ "file:./assets/fonts/Manrope-Variable.ttf" ] } ] }
+			],
+			"fontSizes": [
+				{ "slug": "sm",  "name": "Small",   "size": "0.875rem" },
+				{ "slug": "md",  "name": "Body",    "size": "1.125rem", "fluid": { "min": "1rem", "max": "1.125rem" } },
+				{ "slug": "lg",  "name": "Lede",    "size": "1.375rem", "fluid": { "min": "1.125rem", "max": "1.375rem" } },
+				{ "slug": "xl",  "name": "Section", "size": "2.75rem",  "fluid": { "min": "1.875rem", "max": "2.75rem" } },
+				{ "slug": "xxl", "name": "Display", "size": "4.25rem",  "fluid": { "min": "2.5rem", "max": "4.25rem" } }
+			]
+		},
+		"spacing": {
+			"customSpacingSize": false,
+			"units": [ "px", "rem" ],
+			"spacingSizes": [
+				{ "slug": "20", "name": "XS", "size": "0.5rem" },
+				{ "slug": "30", "name": "S",  "size": "1rem" },
+				{ "slug": "40", "name": "M",  "size": "1.5rem" },
+				{ "slug": "50", "name": "L",  "size": "clamp(2rem, 4vw, 3rem)" },
+				{ "slug": "60", "name": "XL", "size": "clamp(4rem, 9vw, 8rem)" }
+			]
+		},
+		"blocks": {
+			"core/button": { "color": { "background": false, "text": false } }
+		}
+	},
+	"styles": {
+		"color": { "background": "var(--wp--preset--color--canvas)", "text": "var(--wp--preset--color--ink)" },
+		"typography": { "fontFamily": "var(--wp--preset--font-family--body)", "fontSize": "var(--wp--preset--font-size--md)", "lineHeight": "1.6" },
+		"spacing": { "padding": { "left": "clamp(1.5rem, 5.5vw, 5rem)", "right": "clamp(1.5rem, 5.5vw, 5rem)" }, "blockGap": "1.5rem" },
+		"elements": {
+			"heading": { "typography": { "fontFamily": "var(--wp--preset--font-family--display)", "fontWeight": "400", "lineHeight": "1.08" } },
+			"link": { "color": { "text": "var(--wp--preset--color--ink)" } }
+		}
+	},
+	"customTemplates": [ { "name": "page-campaign", "title": "Campaign", "postTypes": [ "page" ] } ],
+	"templateParts": [ { "name": "header", "title": "Header", "area": "header" }, { "name": "footer", "title": "Footer", "area": "footer" } ]
+}

@@ -1,0 +1,29 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"af-site-header"} /-->
+<!-- wp:group {"tagName":"main","className":"af-main af-journal"} -->
+<main id="main" class="wp-block-group af-main af-journal">
+<!-- wp:group {"className":"af-hero af-hero--page af-hero--plain"} -->
+<div class="wp-block-group af-hero af-hero--page af-hero--plain"><div class="af-hero__text">
+<!-- wp:query-title {"type":"archive","showPrefix":false,"className":"af-hero__title"} /-->
+<!-- wp:term-description {"className":"af-hero__intro"} /-->
+</div></div>
+<!-- /wp:group -->
+<!-- wp:categories {"className":"af-cats","showPostCounts":false} /-->
+<!-- wp:query {"queryId":1,"query":{"inherit":true,"perPage":10},"className":"af-query"} -->
+<div class="wp-block-query af-query">
+<!-- wp:post-template {"className":"af-posts"} -->
+<!-- wp:group {"className":"af-post-card"} --><div class="wp-block-group af-post-card">
+<!-- wp:post-featured-image {"isLink":true,"sizeSlug":"medium_large","className":"af-post-card__media"} /-->
+<!-- wp:group {"className":"af-post-card__body"} --><div class="wp-block-group af-post-card__body">
+<!-- wp:post-terms {"term":"category","className":"af-post-card__cat"} /-->
+<!-- wp:post-title {"level":2,"isLink":true,"className":"af-post-card__title"} /-->
+<!-- wp:post-excerpt {"className":"af-post-card__excerpt"} /-->
+<!-- wp:group {"className":"af-byline"} --><div class="wp-block-group af-byline"><!-- wp:post-author-name /--><!-- wp:post-date /--></div><!-- /wp:group -->
+</div><!-- /wp:group -->
+</div><!-- /wp:group -->
+<!-- /wp:post-template -->
+</div>
+<!-- /wp:query -->
+<!-- wp:alderframe/visit-cta /-->
+</main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"af-site-footer"} /-->

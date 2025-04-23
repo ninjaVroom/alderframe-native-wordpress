@@ -1,0 +1,29 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","className":"af-site-header"} /-->
+<!-- wp:group {"tagName":"main","className":"af-main af-search-page"} -->
+<main id="main" class="wp-block-group af-main af-search-page">
+<!-- wp:group {"className":"af-hero af-hero--page af-hero--plain"} -->
+<div class="wp-block-group af-hero af-hero--page af-hero--plain"><div class="af-hero__text">
+<!-- wp:query-title {"type":"search","className":"af-hero__title"} /-->
+
+</div></div>
+<!-- /wp:group -->
+<!-- wp:alderframe/search-form /-->
+<!-- wp:query {"queryId":2,"query":{"inherit":true,"perPage":10},"className":"af-query af-query--search"} -->
+<div class="wp-block-query af-query af-query--search">
+<!-- wp:post-template {"className":"af-results"} -->
+<!-- wp:group {"className":"af-result"} --><div class="wp-block-group af-result">
+<!-- wp:post-title {"level":2,"isLink":true,"className":"af-result__title"} /-->
+<!-- wp:post-excerpt {"className":"af-result__excerpt"} /-->
+</div><!-- /wp:group -->
+<!-- /wp:post-template -->
+<!-- wp:query-no-results -->
+<!-- wp:group {"className":"af-empty"} --><div class="wp-block-group af-empty">
+<!-- wp:paragraph --><p>Nothing matches that search. Try a garden name, a service, or a site condition such as ravine or clay.</p><!-- /wp:paragraph -->
+<!-- wp:paragraph --><p><a class="af-link" href="/gardens/">See completed gardens</a> <a class="af-link" href="/design-services/">Compare services</a></p><!-- /wp:paragraph -->
+</div><!-- /wp:group -->
+<!-- /wp:query-no-results -->
+</div>
+<!-- /wp:query -->
+</main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer","tagName":"footer","className":"af-site-footer"} /-->
