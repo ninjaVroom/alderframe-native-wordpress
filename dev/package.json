@@ -1,0 +1,8 @@
+{
+  "name": "alderframe-dev",
+  "private": true,
+  "scripts": {
+    "wp": "wp-playground-cli server --port=9400 --php=8.3 --wp=latest --blueprint=./blueprint.json --mount=../wp-content/themes/alderframe:/wordpress/wp-content/themes/alderframe --mount=../wp-content/plugins/alderframe-site:/wordpress/wp-content/plugins/alderframe-site --login"
+  },
+  "devDependencies": { "@wp-playground/cli": "3.1.40" }
+}
