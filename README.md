@@ -46,6 +46,6 @@ The seed updates records by their source IDs. Use it on a test installation; it 
 
 GitHub Actions checks all shipped PHP and browser JavaScript for syntax errors. These checks do not replace WordPress runtime testing, mail delivery tests or a production accessibility review. Font license notices remain beside the font files; the theme's GPL declaration is preserved in `style.css`.
 
-## Prototype
+## Figma design
 
-Figma prototype link pending.
+[View the Figma design](https://www.figma.com/design/NoaCEk53nEXkMcn6CNAVdA/Alderframe-Studio---Editable-Website-Design).
